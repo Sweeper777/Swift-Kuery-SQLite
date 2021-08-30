@@ -28,8 +28,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/Kitura/Swift-Kuery.git", from: "3.0.200"),
-        //.package(url: "https://github.com/Kitura/Swift-Kuery.git", .branch("master")),
+      .package(url: "https://github.com/Kitura/Swift-Kuery.git", .upToNextMajor(from: Version(4, 0, 0))),
     ],
     targets: [
         .target(
